@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 *,
 *::before,
@@ -59,7 +60,9 @@ body {
   margin-left: 6rem;
   display: flex;
   flex-direction: column; }
-  .nav div a {
+  .nav__about a,
+  .nav__project a,
+  .nav__contact a {
     position: relative;
     display: block;
     padding: 4px 0;
@@ -70,7 +73,9 @@ body {
     transition: 0.5s;
     font-size: 2rem;
     display: inline-block; }
-    .nav div a::after {
+    .nav__about a::after,
+    .nav__project a::after,
+    .nav__contact a::after {
       position: absolute;
       content: "";
       top: 100%;
@@ -81,9 +86,13 @@ body {
       transform: scaleX(0);
       transform-origin: right;
       transition: transform 0.5s; }
-    .nav div a:hover {
+    .nav__about a:hover,
+    .nav__project a:hover,
+    .nav__contact a:hover {
       color: #95a5a6; }
-    .nav div a:hover::after {
+    .nav__about a:hover::after,
+    .nav__project a:hover::after,
+    .nav__contact a:hover::after {
       transform: scaleX(1);
       transform-origin: left; }
   .nav__about {
@@ -137,11 +146,20 @@ body {
   100% {
     background-position-y: -480px; } }
 
-.logo {
+#logo {
   height: 6.5rem;
   width: 6.5rem;
   border-radius: 50%;
-  background-color: #FFB017; }
+  background-color: #FFB017;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #logo a {
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000; }
 
 .footer {
   background-color: #4484AB;
