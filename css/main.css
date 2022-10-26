@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+  color: #aaa; }
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 100vh) 50vh;
+  grid-template-columns: [full-start] 5vw [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 5vw [full-end]; }
+
+.about {
+  background-color: #DA774A;
+  grid-row: 2/3;
+  grid-column: center-start/center-end;
+  padding: 30rem; }
+
+.project {
+  grid-row: 3/4;
+  grid-column: center-start/center-end;
+  background-color: #E53855; }
+
+:root {
+  --color-red: #ec1840;
+  --color-purple: #7a18ec;
+  --color-white: #fff;
+  --color-black-1: #111;
+  --color-black-2: #222;
+  --color-black-3: #444;
+  --speed-normal: 0.5s;
+  --speed-fast: 0.8s; }
+
+.hero {
+  background-color: #060039;
+  background-image: url("../patterns/Paaatterns/SVG/Taieri.svg");
+  background-size: cover;
+  grid-row: 1/2;
+  grid-column: center-start/center-end;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  color: #fff; }
+
+.nav {
+  grid-row: 1/2;
+  margin-top: 9rem;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column; }
+  .nav div a {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font-family: Ubuntu, sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 2rem;
+    display: inline-block; }
+    .nav div a::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 110%;
+      height: 3px;
+      background: #3498db;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s; }
+    .nav div a:hover {
+      color: #95a5a6; }
+    .nav div a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left; }
+  .nav__about {
+    margin-top: 2rem; }
+  .nav__project {
+    margin-top: 0.5rem; }
+  .nav__contact {
+    margin-top: 0.5rem; }
+
+.header {
+  grid-row: 3/4;
+  margin-bottom: 9rem;
+  margin-left: 6rem;
+  font-family: 'Ubuntu', sans-serif; }
+  .header__name {
+    font-size: 8rem;
+    font-weight: 700; }
+  .header__description {
+    max-width: 47rem;
+    font-size: 2rem;
+    font-weight: 400; }
+
+.btn-contact {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 60px;
+  margin: 20px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  trasnition: var(--speed-normal);
+  border: 1px solid var(--color-red);
+  background-color: transparent;
+  margin-left: 0; }
+
+.btn-contact:hover {
+  border: 1px solid transparent;
+  background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+  transition-delay: 0.8s;
+  background-size: 180px;
+  -webkit-animation: animate var(--speed-fast) steps(8) forwards;
+  animation: animate var(--speed-fast) steps(8) forwards; }
+
+@keyframes animate {
+  0% {
+    background-position-y: 0; }
+  100% {
+    background-position-y: -480px; } }
+
+.logo {
+  height: 6.5rem;
+  width: 6.5rem;
+  border-radius: 50%;
+  background-color: #FFB017; }
+
+.footer {
+  background-color: #4484AB;
+  grid-row: 4/5;
+  grid-column: 1/-1;
+  padding: 15rem; }
+
+.container section {
+  margin: 2vw 0; }
