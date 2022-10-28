@@ -24,10 +24,56 @@ body {
   grid-template-columns: [full-start] 5vw [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 5vw [full-end]; }
 
 .about {
-  background-color: #DA774A;
   grid-row: 2/3;
   grid-column: center-start/center-end;
-  padding: 30rem; }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 0.5fr)); }
+
+.about {
+  color: #fff;
+  font-family: Ubuntu, sans-serif; }
+  .about__overview {
+    background-image: url("../patterns/Paaatterns/SVG/full-Taieri.svg");
+    background-size: cover;
+    background-position: -60%;
+    background-repeat: no-repeat;
+    background-color: #060039; }
+  .about__skill {
+    background-color: #4484AB; }
+  .about__image {
+    height: 55rem;
+    width: 55rem;
+    display: block;
+    margin-left: -1rem; }
+  .about__name {
+    font-size: 4.5rem;
+    margin-left: 1rem;
+    margin-bottom: -0.5rem;
+    margin-left: 6rem;
+    margin-top: -2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #F78698, #A0051D);
+    background-clip: text;
+    color: transparent; }
+  .about__job {
+    font-size: 3rem;
+    margin-left: 6rem;
+    margin-top: -1.5rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #9CC7E1, #135982);
+    background-clip: text;
+    color: transparent; }
+  .about__description {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    max-width: 50rem;
+    background-image: linear-gradient(to right, #FFCE6F, #FFB017);
+    background-clip: text;
+    color: transparent; }
 
 .project {
   grid-row: 3/4;
@@ -82,7 +128,7 @@ body {
       left: 0;
       width: 110%;
       height: 3px;
-      background: #3498db;
+      background: #E53855;
       transform: scaleX(0);
       transform-origin: right;
       transition: transform 0.5s; }
@@ -111,9 +157,11 @@ body {
     font-size: 8rem;
     font-weight: 700; }
   .header__description {
-    max-width: 47rem;
+    max-width: 46rem;
     font-size: 2rem;
     font-weight: 400; }
+    .header__description span {
+      color: #E53855; }
 
 .btn-contact {
   display: inline-block;
@@ -130,7 +178,8 @@ body {
   trasnition: var(--speed-normal);
   border: 1px solid var(--color-red);
   background-color: transparent;
-  margin-left: 0; }
+  margin-left: 0;
+  font-size: 1.5rem; }
 
 .btn-contact:hover {
   border: 1px solid transparent;
