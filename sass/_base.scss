@@ -1,10 +1,11 @@
-$font-primary: 'Nunito', sans-serif;
+$font-primary: Ubuntu, sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
 
 $color-primary: #060039;
 $color-secondary-1: #44AB96;
+$color-secondary-1-r: #4F76B0;
 $color-secondary-2: #DA774A;
 $color-secondary-3: #E53855;
 $color-secondary-3-g: #F78698;
@@ -27,18 +28,31 @@ $color-secondary-5-dark: #FFB017;
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
+
+	@media screen and (max-width: 85em) {
+		font-size: 56.25%;
+	}
+	@media screen and (max-width: 56.25em){
+		font-size: 50%;
+	}
+	@media screen and (max-width: 31.25em) {
+		font-size: 45%;
+	} 
 }
 
 body {
 	font-family: $font-primary;
 	line-height: 1.6;
-	color: $color-grey-light-2;
+	color: #000;
+	background-color: rgba($color-secondary-1, 0.1);
 }
 
 .container {
 	display: grid;
-	grid-template-rows: repeat(3, 100vh) 50vh;
-	grid-template-columns: [full-start] 5vw [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 5vw [full-end];
+	grid-template-rows: repeat(4, min-content);
+	grid-template-columns: [full-start] 0 [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 0 [full-end];
 }
 
-
+#u-add-base-color {
+	// background-color: $color-primary;
+}

@@ -5,48 +5,220 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
+	<link href="https://unpkg.com/pattern.css" rel="stylesheet">
 	<title>Noman Khan</title>
 </head>
-<body class="container">
+<body class="container" id="u-add-base-color">
 	
-	<section class="hero">
+	<section class="hero" id="hero">
 		<nav class="nav" id="nav">
 			<div class="logo" id="logo">
 				<a href="#">
 					.nk
 				</a>
 			</div>
-			<div class="nav__about"><a href="#">About</a></div>
-			<div class="nav__project"><a href="#">My work</a></div>
-			<div class="nav__contact"><a href="#">Contact Me</a></div>
+			<div class="nav__about" id="navText"><a href="#">About</a></div>
+			<div class="nav__project" id="navText"><a href="#">My work</a></div>
+			<div class="nav__contact" id="navText"><a href="#">Contact Me</a></div>
 		</nav>
 		<header class="header" id="header">
-			<h1 class="header__name">Noman Khan</h1>
-			<h3 class="header__description">
+			<h1 class="header__name" id="header-1">Noman Khan</h1>
+			<h3 class="header__description" id="header-3">
 				Hey there, I am Noman a frontend web developer, 
 				I hold expertise in building attractive
 				and user friendly websites. 
 				<span>I believe my core strength is stealing like an artist.</span> 
 			</h3>
-			<a href="#" class="btn-contact">Learn More</a>
+			<a href="#" class="btn-contact" id="btnText">Learn More</a>
 		</header>
 	</section> 
 	<section class="about" id="about" >
 		<div class="about__overview">
 			<img src="SVG/Neon%20avatars%20illustrations-02.svg" alt="" class="about__image">
-			<h1 class="about__name">Noman Khan</h1>
-			<h3 class="about__job">Developer</h3>
-			<p class="about__description">
-				A short introduction which will help you understand about me.
-				Right from first year of my engineering I was intrerested in computer science but due to less exposure, I was not working in right direction. Luckily as of now I have a right direction, and I wake up everyday with hope that I have something intresting to do. Henceforth I hold ability to keep going even at hard times and I love what I do, and this is a deadly combination.
-			</p>
+			<div class="about__me">
+				<h1 class="about__name">Noman Khan</h1>
+				<h3 class="about__job">Developer</h3>
+				<p class="about__description">
+					A short introduction which will help you understand about me.
+					Right from first year of my engineering I was intrerested in computer science but due to less exposure, I was not working in right direction. Luckily as of now I have a right direction, and I wake up everyday with hope that I have something intresting to do. Henceforth I hold ability to keep going even at hard times and I love what I do, and this is a deadly combination.
+				</p>
+			</div>
 		</div>
-		<div class="about__skill">About my skills</div>
+		<div class="about__skill">
+			<h1 class="skills">skills</h1>
+			 <div class="wrapper">
+				  <article class="badge orange" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-html5"></i></div>
+				  </article>
+				  <article class="badge blue" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-css3-alt"></i></div>
+				  </article>
+				  <article class="badge gold" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-js-square"></i></div>
+				  </article>
+				  <article class="badge react" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-react"></i></div>
+				  </article>
+				  <article class="badge green" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-node"></i></div>
+				  </article>
+				  <article class="badge crimson" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-npm"></i></div>
+				  </article>
+				  <article class="badge grey" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fas fa-terminal"></i></div>
+				  </article>
+				  <article class="badge pink" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-sass"></i></div>
+				  </article>
+				  <article class="badge black" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fas fa-database"></i></div>
+				  </article>
+				  <article class="badge rebecca" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-bootstrap"></i></div>
+				  </article>
+				  <article class="badge gainsboro" data-tilt data-tilt-max="35">
+				    <div class="rounded"><i class="fab fa-java"></i></div>
+				  </article>
+				  
+				</div>
+		</div>
 	</section>
 	<section class="project" id="project">
-		projects
+		<div class="project__item card card-1">
+			<div class="project__header">
+				<h1 class="project__name">BigBrain</h1>
+				<div class="project__stack">
+					<span>Made using:</span>
+					<i class="fab fa-js"></i>
+					<i class="fab fa-react"></i>
+					<i class="fab fa-node"></i>
+					<span>more...</span>
+			</div>
+			</div>
+			<div class="project__description">
+				BigBrain is a face recognition web app. It recognizes face with help of a Clarifai API, BigBrain also uses some third-party libraries like Tilt.js, tsparticle etc. styling are premodimantly done with tachyons. BigBrain also has a small database which is based on postgreSql.
+			</div>
+			<div class="project__seek">
+				<i class="fab fa-github"></i>
+				<span>github</span>
+				<i class="fas fa-globe"></i>
+				<span>live</span>
+			</div>
+		</div>
+		<div class="project__item card card-2">
+			<div class="project__header">
+				<h1 class="project__name">Natours</h1>
+				<div class="project__stack">
+					<span>Made using:</span>
+					<i class="fab fa-html5"></i>
+					<i class="fab fa-css3-alt"></i>
+					<i class="fab fa-sass"></i>
+					
+			</div>
+			</div>
+			<div class="project__description">
+				Natours is a fictional tours and travel agency. This is their landing page which is fully responsive and includes best practices like BEM methodology and 7-1 architecture. This landing page is extensively styled using sass. 
+			</div>
+			<div class="project__seek">
+				<i class="fab fa-github"></i>
+				<span>github</span>
+				<i class="fas fa-globe"></i>
+				<span>live</span>
+			</div>
+		</div>
+		<div class="project__item card card-3">
+			<div class="project__header">
+				<h1 class="project__name">Trillo</h1>
+				<div class="project__stack">
+					<span>Made using:</span>
+					<i class="fab fa-html5"></i>
+					<i class="fab fa-css3-alt"></i>
+					<i class="fab fa-sass"></i>
+			</div>
+			</div>
+			<div class="project__description">
+				Trillo is a fictional booking platform.This is their website which is a fully responsive, flexbox based booking website. It is an all in one booking platform which helps users book hotel, flight, car rental and organise tours. Trillo is extensively styled using sass. 
+			</div>
+			<div class="project__seek">
+				<i class="fab fa-github"></i>
+				<span>github</span>
+				<i class="fas fa-globe"></i>
+				<span>live</span>
+			</div>
+		</div>
+		<div class="project__item card card-4">
+			<div class="project__header">
+				<h1 class="project__name">Nexter</h1>
+				<div class="project__stack">
+					<span>Made using:</span>
+					<i class="fab fa-html5"></i>
+					<i class="fab fa-css3-alt"></i>
+					<i class="fab fa-sass"></i>
+			</div>
+			</div>
+			<div class="project__description">
+				Nexter is a fictional real estate company. This is their website which is fully responsive, css grid based website.Almost every small and big component includes css grid. Website has minimal and elegant design. This is extensively styled using sass.
+			</div>
+			<div class="project__seek">
+				<i class="fab fa-github"></i>
+				<span>github</span>
+				<i class="fas fa-globe"></i>
+				<span>live</span>
+			</div>
+		</div>
+		<div class="project__item card card-5">
+			<div class="project__header">
+				<h1 class="project__name">Robofriends</h1>
+				<div class="project__stack">
+					<span>Made using:</span>
+					<i class="fab fa-react"></i>
+				</div>
+			</div>
+			<div class="project__description">
+				Robofriends is a fun project based on reactjs. It fetches user names from a dummy api and uses robohash to get random robot faces. It also has a search box which under the hood uses changing state to show appropriate result as per search feild input.
+			</div>
+			<div class="project__seek">
+				<i class="fab fa-github"></i>
+				<span>github</span>
+				<i class="fas fa-globe"></i>
+				<span>live</span>
+			</div>
+		</div>
+		<div class="project__item card card-1">
+			<div class="project__header">
+				<h1 class="project__name">Javascript20</h1>
+				<div class="project__stack">
+					<span>Made using:</span>
+					<i class="fab fa-js"></i>
+			</div>
+			</div>
+			<div class="project__description">
+				Javascript20 includes 20 vanilla javascript projects build by me.
+				All projects are mobile responsive which is a necessity as of now. Projects included Quote generator,joke teller,video player,bookmark keeper,music player,some games and many more...
+			</div>
+			<div class="project__seek">
+				<i class="fab fa-github"></i>
+				<span>github</span>
+				<i class="fas fa-globe"></i>
+				<span>live</span>
+			</div>
+		</div>
+		
 	</section>
-	<footer class="footer" id="footer">Footer</footer>
+	<footer class="footer" id="footer">
+		<a href="mailto:khannoman1702@gmail.com" class="footer__mail">khannoman1702@gmail.com</a>
+		
+		<ul class="footer__social">
+		  
+		  <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+		 
+		  <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+		  <li><a href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+		</ul>
 
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

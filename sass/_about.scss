@@ -1,75 +1,192 @@
 .about {
 	grid-row: 2/3;
 	grid-column: center-start/center-end;
-	
+	// clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(40rem, 0.5fr));
+	column-gap: 2rem;
+	grid-template-columns: repeat(auto-fit,  minmax(57rem, 1fr));
+	padding: 5rem 5.5rem 10rem 5.5rem;
 
-}
+	&__overview {
+		display: flex;
+		flex-direction: column;
 
-.about {
-	color: #fff;
-	font-family: Ubuntu, sans-serif;
-	&__overview{
-		background-image: url("../patterns/Paaatterns/SVG/full-Taieri.svg");
-		background-size: cover;
-		background-position: -60%;
-		background-repeat: no-repeat;
-		background-color: $color-primary;
-
-	}
-
-	&__skill{
-		background-color: $color-secondary-4;
 	}
 
 	&__image {
-		height: 55rem;
-		width: 55rem;
-		display: block;
-		margin-left: -1rem; 
+		height: 50rem;
+		width: 50rem;
+		border-radius: 50%;
+		border-collapse: separate; 
 	}
 
-	&__name {
-		font-size: 4.5rem;
-		margin-left: 1rem;
-		margin-bottom: -0.5rem;
-		margin-left: 6rem;
-		margin-top: -2rem;
+	&__me{
+		display: flex;
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+
+	&__name{
 		letter-spacing: .2rem;
 		text-transform: uppercase;
 		background-image: linear-gradient(to right, $color-secondary-3-g, $color-secondary-3-dark);
 		background-clip: text;
 		color: transparent;
-
 	}
-	&__job {
-		font-size: 3rem;
-		margin-left: 6rem;
-		margin-top: -1.5rem;
-		letter-spacing: .1rem;
+
+	&__job{
+		letter-spacing: 1px;
 		text-transform: uppercase;
-		background-image: linear-gradient(to right, $color-secondary-4-g, $color-secondary-4-dark);
+		color: #222;
+		margin-top: -4rem;
+	}
+
+	&__description{
+		font-size: 2rem;
+		max-width: 60rem;
+		color: #222;
+		text-align: justify;
+	}
+
+	.skills{
+		font-size: 5rem;
+		letter-spacing: .2rem;
+		text-transform: uppercase;
+		background-image: linear-gradient(to right, $color-secondary-3-g, $color-secondary-3-dark);
 		background-clip: text;
 		color: transparent;
 	}
-	&__description {
-		font-size: 1.5rem;
-		margin-left: 1rem;
-		margin-left: 6rem;
-		margin-top: 1rem;
-		max-width: 50rem;
-		background-image: linear-gradient(to right, $color-secondary-5-g, $color-secondary-5-dark);
-		background-clip: text;
-		color: transparent;
+
+	
+}
+
+.about__skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2rem;
+
+	.skills {
+		
+	}
+	.wrapper {
+		
 	}
 
 
+	.wrapper {
+		text-align: center;
+		border-radius: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 3rem;
+		row-gap: 1rem;
+	}
+
+/* Badge */
+	.badge {
+		margin: 1.5rem 3rem;
+		width: 10rem;
+		height: 10rem;
+		border-radius: 20%;
+		display: inline-block;
+		top: 0;
+		transition: all 0.2s ease;
+  		box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
+	}
+
+	.rounded {
+		width: 7rem;
+		height: 7rem;
+	    background: white;
+	    position: absolute;
+	    margin: 15px 16px auto;
+	    z-index: 10;
+		border-radius: 30%;
+	    box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
+  
+  		i.fab,
+  		i.fas {
+    		font-size: 3.5rem;
+			margin-top: 16px;
+  		}
+	}
+
+	/* Colors */
+	.blue {
+	    background: dodgerblue;
+	    color: deepskyblue;
+	}
+
+	.orange {
+	  background: darkorange;
+	  color: orange;
+	}
+
+	.gold {
+	  background: gold;
+	  color: gold;
+	}
+
+	.black {
+		background: #757575;
+		color: #757575;
+	}
+
+	.react {
+	  background: #61dbfb;
+	  color: #61dbfb;
+	}
+
+	.purple {
+	  background: mediumpurple;
+	  color: slategray;
+	}
+
+	.green {
+	  background: yellowgreen;
+	  color: darkslategray;
+	}
+
+	.crimson {
+	  background: crimson;
+	  color: firebrick;
+	}
+
+	.steel {
+	  background: steelblue;
+	  color: gold;
+	}
+
+	.pink {
+	  background: hotpink;
+	  color: palevioletred;
+	}
+
+	.rebecca {
+	  background: rebeccapurple;
+	  color: rebeccapurple;
+	}
+
+	.gainsboro {
+	  background: gainsboro;
+	  color: orangered;
+	}
+
+	.grey {
+		background: #464646;
+		color: #464646;
+	}
+}
 
 
 
+// media queries
 
+@media screen and (max-width: 1200px) {
 
-
-
+	.about__skills {
+		justify-items: center;
+	}
 }

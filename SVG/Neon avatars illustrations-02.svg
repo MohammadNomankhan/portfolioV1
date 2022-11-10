@@ -7,11 +7,11 @@
 		<stop  offset="0" style="stop-color:#372460"/>
 		<stop  offset="1" style="stop-color:#230D44"/>
 	</radialGradient>
-	<circle fill="url(#SVGID_1_)" cx="727.5" cy="727.5" r="642.3"/>
+	<circle fill="url(#SVGID_1_)" cx="727.5" cy="727.5" r="600"/>
 </g>
 <g id="neon">
 	
-		<image overflow="visible" width="688" height="976" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArAAAAPQCAYAAADOx0hYAAAgAElEQVR4nOy9e6x9yVXn911Ve5/H
+		<image width="688" height="976" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArAAAAPQCAYAAADOx0hYAAAgAElEQVR4nOy9e6x9yVXn911Ve5/H
 vfd3f49+P90PNx7bhOExBgzJJIEkYgRECo6UzEiRAskfCYyigPwPIkRRiEn+AOaPiCjKaJhIkdAI
 Yog0o2QShjAMGPMwYEhswN3GduNuu3/d/Xvdxzln71218seqx6ra+5x720Doxynp97tn712PVbUf
 9alVq1YB+7AP+7AP+7AP+7AP+7APb6FAAMDMf9Vy7MNbPZwQgRGeqDL80evP4u9//mn8vVcOAU8S

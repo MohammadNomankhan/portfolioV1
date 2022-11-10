@@ -1,7 +1,85 @@
 .footer {
-	background-color: $color-secondary-4;
 	grid-row: 4/5;
-	grid-column: 1/-1;
-	padding: 15rem;
-
+	grid-column: center-start/center-end;
 }
+
+ul {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width:6rem;
+  height:6rem;
+  border-radius: 50%;
+
+  display:block;
+  margin:0 10px;
+  padding: 6px;
+
+  text-align:center;
+  text-decoration:none;
+
+  background: linear-gradient(0deg, #ddd, #fff);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  position: relative;
+  transition: .5s;
+}
+
+ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+ul li a .fab {
+  widht: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+
+ul li:nth-child(1) a:hover .fab {
+  color: #00aced;
+}
+
+ul li:nth-child(2) a:hover .fab {
+  color: #0E76A8;
+}
+
+ul li:nth-child(3) a:hover .fab {
+  color: #171515 ;
+}
+
+
+
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+
+
+.footer__mail {
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
